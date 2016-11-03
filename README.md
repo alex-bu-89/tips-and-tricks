@@ -1,4 +1,4 @@
-# tips
+# List of useful tips
 
 ### Monitor DOM events and functions in Chrome
 ```
