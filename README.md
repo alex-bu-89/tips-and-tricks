@@ -1,4 +1,6 @@
-## Monitor DOM events and functions in Chrome
+## Chrome Dev Tools
+
+#### Monitor DOM events and functions in Chrome
 ```JavaScript
 // subscribe to events
 monitorEvents(document.body, "click");
@@ -15,17 +17,17 @@ monitor(someFunction);
 
 [Command Line API Reference](https://developers.google.com/web/tools/chrome-devtools/console/command-line-reference)
 
-## Design mode
+#### Design mode
 ```JavaScript
 document.designMode = 'on'
 ```
 
-## Copy obj / var to buffer
+#### Copy obj / var to buffer
 ```JavaScript
 copy (someVariable)
 ```
 
-## Link to selected DOM element
+#### Link to selected DOM element
 ```JavaScript
 // link to DOM node
 $0
@@ -37,7 +39,8 @@ console.dir($0)
 $($0).data()
 ```
 
-## Arrow functions in console
+#### Arrow functions in console
 ```JavaScript
+// you can use arrow functions in console
 performance.getEntries().filter(entry => entry.name)
 ```
