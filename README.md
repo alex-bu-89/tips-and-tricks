@@ -30,7 +30,7 @@ copy (someVariable)
 // link to DOM node
 $0
 
-// get java script obj
+// get JavaScript obj
 console.dir($0)
 
 // using JQuery
