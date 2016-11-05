@@ -1,5 +1,7 @@
 ## Chrome Dev Tools
 
+[Command Line API Reference](https://developers.google.com/web/tools/chrome-devtools/console/command-line-reference)
+
 #### Monitor DOM events and functions in Chrome
 ```JavaScript
 // subscribe to events
@@ -14,8 +16,6 @@ getEventListeners(document);
 // subscribe to functions
 monitor(someFunction);
 ```
-
-[Command Line API Reference](https://developers.google.com/web/tools/chrome-devtools/console/command-line-reference)
 
 #### Design mode
 ```JavaScript
