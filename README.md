@@ -1,5 +1,5 @@
 # Monitor DOM events and functions in Chrome
-```
+```JavaScript
 // subscribe to event
 monitorEvents(document.body, "click");
 
