@@ -1,9 +1,9 @@
 # Monitor DOM events and functions in Chrome
 ```JavaScript
-// subscribe to event
+// subscribe to events
 monitorEvents(document.body, "click");
 
-// unsubscribe to event
+// unsubscribe from events
 unmonitorEvents(document.body, "click")
 
 // subscribe to functions
