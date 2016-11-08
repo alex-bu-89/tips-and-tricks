@@ -44,3 +44,8 @@ $($0).data()
 // you can use arrow functions in console
 performance.getEntries().filter(entry => entry.name)
 ```
+
+# Command line
+```
+find ./app/img/icons -name '*shelf-parts.svg'
+```
