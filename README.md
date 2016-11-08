@@ -47,5 +47,5 @@ performance.getEntries().filter(entry => entry.name)
 
 # Command line
 ```
-find ./app/img/icons -name '*shelf-parts.svg'
+find ./app/img/ -name '*some.svg'
 ```
