@@ -41,7 +41,7 @@ $($0).data()
 
 #### Arrow functions in console
 ```js
-// you can use arrow functions in console
+// use arrow functions in console
 performance.getEntries().filter(entry => entry.name)
 ```
 
