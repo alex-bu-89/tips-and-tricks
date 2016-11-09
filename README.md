@@ -46,6 +46,6 @@ performance.getEntries().filter(entry => entry.name)
 ```
 
 # Command line
-```js
+```bash
 find ./app/img/ -name '*some.svg'
 ```
