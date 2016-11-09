@@ -29,7 +29,7 @@ copy (someVariable)
 
 #### Link to selected DOM element
 ```js
-// link to DOM node
+// link to selected DOM node
 $0
 
 // get JavaScript obj
