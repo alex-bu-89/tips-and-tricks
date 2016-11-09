@@ -18,7 +18,7 @@ monitor(someFunction);
 ```
 
 #### Design mode
-```JavaScript
+```js
 document.designMode = 'on'
 ```
 
@@ -28,7 +28,7 @@ copy (someVariable)
 ```
 
 #### Link to selected DOM element
-```JavaScript
+```js
 // link to DOM node
 $0
 
@@ -40,12 +40,12 @@ $($0).data()
 ```
 
 #### Arrow functions in console
-```JavaScript
+```js
 // you can use arrow functions in console
 performance.getEntries().filter(entry => entry.name)
 ```
 
 # Command line
-```
+```js
 find ./app/img/ -name '*some.svg'
 ```
