@@ -46,11 +46,11 @@ performance.getEntries().filter(entry => entry.name)
 ```
 
 # Command line
-```
+```js
 find ./app/img/ -name '*some.svg'
 ```
 
-```
+```js
 // open current dir from webstorm
 wstorm .
 ```
