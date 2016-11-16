@@ -49,3 +49,8 @@ performance.getEntries().filter(entry => entry.name)
 ```
 find ./app/img/ -name '*some.svg'
 ```
+
+```
+// open current dir from webstorm
+wstorm .
+```
