@@ -81,3 +81,32 @@ let veryLongText = `Hi ${userName}, this is a very very long text, ${admin.FullN
 var now = new Date();
 console.log(+now) // console.log(new Number(now))
 ```
+#### Measuring perfomance
+```js
+// Constructor.
+function SpeedTest(testImplement, testParams, repetitions) {
+  this.testImplement = testImplement;
+  this.testParams = testParams;
+  this.repetitions = repetitions || 10000;
+  this.average = 0;
+}
+
+// Add the methods to prototype
+SpeedTest.prototype = {
+  startTest: function(){
+    var beginTime, endTime, sumTimes = 0;
+    
+    for (var i = 0, x = this.repetitions.length; x < i; i++) {
+      beginTime = +newDate();
+      this.testImplement( this.testParams );
+      endTime = +newDate();
+      sumTimes += endTime - beginTime;
+    }
+    
+    this.average = sumTimes / this.repetitions;
+    return console.log("Average execution across " +
+                        this.repetitions + ": " +
+                        this.average);
+  }
+};
+```
