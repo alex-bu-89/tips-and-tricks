@@ -55,3 +55,11 @@ find ./app/img/ -name '*some.svg'
 ```js
 wstorm .
 ```
+
+
+# JavaScript
+
+```js
+// The Object.assign() method is used to copy the values of all enumerable own properties from one or more source objects to a target object.
+let settings = Object.assign( {}, defaults, options1, options2 );
+```
