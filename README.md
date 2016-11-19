@@ -64,3 +64,14 @@ wstorm .
 // The Object.assign() method is used to copy the values of all enumerable own properties from one or more source objects to a target object.
 let settings = Object.assign( {}, defaults, options1, options2 );
 ```
+
+#### Object Initializer
+```js
+// buildUser() returns first, last, fullName
+let { first, last, fullName } = buildUser("Sam", "Williams");
+```
+
+#### Template string
+```js
+let veryLongText = `Hi ${userName}, this is a very very long text, ${admin.FullName}`;
+```
