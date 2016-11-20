@@ -76,7 +76,7 @@ let { first, last, fullName } = buildUser("Sam", "Williams");
 let veryLongText = `Hi ${userName}, this is a very very long text, ${admin.FullName}`;
 ```
 
-#### new Number
+#### New Number
 ```js
 var now = new Date();
 console.log(+now) // console.log(new Number(now))
