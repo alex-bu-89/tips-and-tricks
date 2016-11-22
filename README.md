@@ -47,7 +47,7 @@ performance.getEntries().filter(entry => entry.name)
 
 #### Pause JavaScript execution
 ```
-- press fn + F8 (mac)
+- press fn + F8 (osx)
 - inspect elements
 ```
 
