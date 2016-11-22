@@ -45,6 +45,12 @@ $($0).data()
 performance.getEntries().filter(entry => entry.name)
 ```
 
+#### Pause JavaScript execution
+```
+- press ctrl + F8 
+- inspect elements
+```
+
 # Command line
 
 #### Find files
