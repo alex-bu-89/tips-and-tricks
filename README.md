@@ -61,7 +61,10 @@ find ./app/img/ -name '*some.svg'
 ```js
 wstorm .
 ```
-
+#### Find text in file (git)
+```
+git grep 'string' -- '*.sass'
+```
 
 # JavaScript
 
