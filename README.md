@@ -65,19 +65,19 @@ wstorm .
 
 # JavaScript
 
-#### Object.assign()
+#### Object.assign() [es6]
 ```js
 // The Object.assign() method is used to copy the values of all enumerable own properties from one or more source objects to a target object.
 let settings = Object.assign( {}, defaults, options1, options2 );
 ```
 
-#### Object Initializer
+#### Object Initializer [es6]
 ```js
 // buildUser() returns first, last, fullName
 let { first, last, fullName } = buildUser("Sam", "Williams");
 ```
 
-#### Template string
+#### Template string [es6]
 ```js
 let veryLongText = `Hi ${userName}, this is a very very long text, ${admin.FullName}`;
 ```
