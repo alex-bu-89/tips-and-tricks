@@ -1,5 +1,5 @@
 # Table of Contents
-1. [Chrome Dev Tools](Chrome Dev Tools)
+1. [Chrome Dev Tools](#Chrome Dev Tools)
 
 # Chrome Dev Tools
 
