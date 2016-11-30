@@ -74,6 +74,11 @@ git grep 'string' -- '*.sass'
 let settings = Object.assign( {}, defaults, options1, options2 );
 ```
 
+#### Console.table
+```js
+console.table(["one", "two", "three"]);
+```
+
 #### Object Initializer [es6]
 ```js
 // buildUser() returns first, last, fullName
