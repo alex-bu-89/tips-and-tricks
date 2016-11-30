@@ -1,7 +1,7 @@
 # Table of Contents
-1. [Chrome Dev Tools](#Chrome Dev Tools)
-1. [Design mode](#Design mode)
-1. [Command line](#Command line)
+1. [Chrome Dev Tools](#Chrome-Dev-Tools)
+1. [Design mode](#Design-mode)
+1. [Command line](#Command-line)
 1. [JavaScript](#JavaScript)
 
 
