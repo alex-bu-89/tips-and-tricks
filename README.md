@@ -1,3 +1,6 @@
+# Table of Contents
+1. [Chrome Dev Tools](Chrome Dev Tools)
+
 # Chrome Dev Tools
 
 [Command Line API Reference](https://developers.google.com/web/tools/chrome-devtools/console/command-line-reference)
@@ -109,14 +112,14 @@ function SpeedTest(testImplement, testParams, repetitions) {
 SpeedTest.prototype = {
   startTest: function(){
     var beginTime, endTime, sumTimes = 0;
-    
+
     for (var i = 0, x = this.repetitions.length; x < i; i++) {
       beginTime = +newDate();
       this.testImplement( this.testParams );
       endTime = +newDate();
       sumTimes += endTime - beginTime;
     }
-    
+
     this.average = sumTimes / this.repetitions;
     return console.log("Average execution across " +
                         this.repetitions + ": " +
