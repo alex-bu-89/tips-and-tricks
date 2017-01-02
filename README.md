@@ -3,7 +3,6 @@
 1. [Command line](#command-line)
 1. [JavaScript](#javascript)
 
-
 # Chrome Dev Tools
 
 [Command Line API Reference](https://developers.google.com/web/tools/chrome-devtools/console/command-line-reference)
@@ -129,4 +128,29 @@ SpeedTest.prototype = {
                         this.average);
   }
 };
+```
+
+#### Prototype extending 
+```js
+// define the Person Class
+function Person() {}
+
+Person.prototype.walk = function(){
+  alert ('I am walking!');
+};
+Person.prototype.sayHello = function(){
+  alert ('hello');
+};
+
+// define the Student class
+function Student() {
+  // Call the parent constructor
+  Person.call(this);
+}
+
+// inherit Person
+Student.prototype = Object.create(Person.prototype);
+
+// correct the constructor pointer because it points to Person
+Student.prototype.constructor = Student;
 ```
