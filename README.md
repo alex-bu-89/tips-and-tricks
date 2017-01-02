@@ -138,6 +138,7 @@ function Person() {}
 Person.prototype.walk = function(){
   alert ('I am walking!');
 };
+
 Person.prototype.sayHello = function(){
   alert ('hello');
 };
