@@ -155,3 +155,27 @@ Student.prototype = Object.create(Person.prototype);
 // correct the constructor pointer because it points to Person
 Student.prototype.constructor = Student;
 ```
+
+```js
+var Auto = (function () {
+  var Auto = function () {
+    this.doors = 4;
+  }
+  
+  Auto.prototype.publicMethod = function () {
+    privateMethod.call(this);
+  }
+
+  var privateMethod = function () {
+    console.log(this.doors);
+  }
+
+  return Auto;
+})();
+
+// Error
+new Auto().privateMethod();
+
+// Will successfully call privateMethod internally.
+new Auto().publicMethod();
+```
