@@ -155,7 +155,7 @@ Student.prototype = Object.create(Person.prototype);
 // correct the constructor pointer because it points to Person
 Student.prototype.constructor = Student;
 ```
-### Private method 
+#### Private method 
 ```js
 var Auto = (function () {
   var Auto = function () {
