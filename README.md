@@ -97,15 +97,15 @@ let veryLongText = `Hi ${userName}, this is a very very long text, ${admin.FullN
 
 #### Spread syntax
 ```js
-// better apply
-// in cases where you want to use an array as arguments to a function.]
+// Better apply
+// In cases where you want to use an array as arguments to a function.
 
-// old
+// Old
 function myFunction(x, y, z) { }
 var args = [0, 1, 2];
 myFunction.apply(null, args);
 
-// new
+// New (spread syntax)
 function myFunction(x, y, z) { }
 var args = [0, 1, 2];
 myFunction(...args);
