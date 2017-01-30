@@ -95,6 +95,21 @@ let { first, last, fullName } = buildUser("Sam", "Williams");
 let veryLongText = `Hi ${userName}, this is a very very long text, ${admin.FullName}`;
 ```
 
+#### Spread syntax
+```js
+// better apply
+// in cases where you want to use an array as arguments to a function.]
+
+// old
+function myFunction(x, y, z) { }
+var args = [0, 1, 2];
+myFunction.apply(null, args);
+
+// new
+function myFunction(x, y, z) { }
+var args = [0, 1, 2];
+myFunction(...args);
+```
 #### New Number
 ```js
 var now = new Date();
