@@ -195,7 +195,7 @@ new Auto().privateMethod();
 new Auto().publicMethod();
 ```
 
-## Parallelize Promises 
+#### Parallelize Promises 
 ```js
 let urls = [
   '/api/commits',
