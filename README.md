@@ -194,3 +194,29 @@ new Auto().privateMethod();
 // Will successfully call privateMethod internally.
 new Auto().publicMethod();
 ```
+
+## Parallelize Promises 
+```js
+let urls = [
+  '/api/commits',
+  '/api/issues/opened',
+  '/api/issues/assigned',
+  '/api/issues/completed',
+  '/api/issues/comments',
+  '/api/pullrequests'
+];
+
+let promises = urls.map((url) => {
+  return new Promise((resolve, reject) => {
+    $.ajax({ url: url })
+      .done((data) => {
+        resolve(data);
+      });
+  });
+});
+
+Promise.all(promises)
+  .then((results) => {
+    // Do something with results of all our promises
+ });
+```
