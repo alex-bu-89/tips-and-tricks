@@ -226,7 +226,7 @@ let removeDublicates = (array) => {
   let result = array.filter((item, index) => {
     return array.indexOf(item) == index
   })
-  console.log(result);
+  
   return result;
 }
 
