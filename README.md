@@ -269,9 +269,7 @@ var unscramble = (word) => {
     // otherwise not
     wordToCheck = ''
     return false;
-  })
-  
-  console.log(possibleMatch)
+  })  
 }
 
 unscramble('ovel');
