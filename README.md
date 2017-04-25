@@ -220,6 +220,7 @@ Promise.all(promises)
     // Do something with results of all our promises
  });
 ```
+
 #### Remove dublicates from array
 ```js
 let removeDublicates = (array) => {
