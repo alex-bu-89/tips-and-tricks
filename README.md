@@ -275,3 +275,16 @@ var unscramble = (word) => {
 unscramble('ovel');
 
 ```
+
+#### Object.is()
+```js
+0 == ' ' // true
+null == undefined // true
+[1] == true // true
+NaN === NaN // false
+
+Object.is(0 , ' '); // false
+Object.is(null, undefined); // false
+Object.is([1], true); // false
+Object.is(NaN, NaN); // true
+```
