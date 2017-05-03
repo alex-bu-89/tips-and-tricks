@@ -221,22 +221,6 @@ Promise.all(promises)
  });
 ```
 
-#### Remove dublicates from array
-```js
-let removeDublicates = (array) => {
-  let result = array.filter((item, index) => {
-    return array.indexOf(item) == index
-  })
-
-  return result;
-}
-
-removeDublicates([1,3,2,4]);
-removeDublicates([1,3,3]);
-removeDublicates([1,4,1,4]);
-removeDublicates([1,1,1,1,1,1]);
-```
-
 #### Object.is()
 ```js
 0 == ' ' // true
