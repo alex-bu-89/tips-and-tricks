@@ -235,8 +235,7 @@ Object.is(NaN, NaN); // true
 ```
 
 #### RxJS
-
-```
+```js
 // Get all distinct key up events from the input and only fire if long enough and distinct
 var keyup = Rx.Observable.fromEvent(input, 'keyup')
   .map(function (e) {
