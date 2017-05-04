@@ -233,3 +233,18 @@ Object.is(null, undefined); // false
 Object.is([1], true); // false
 Object.is(NaN, NaN); // true
 ```
+
+#### RxJS
+
+```
+// Get all distinct key up events from the input and only fire if long enough and distinct
+var keyup = Rx.Observable.fromEvent(input, 'keyup')
+  .map(function (e) {
+    return e.target.value; // Project the text from the input
+  })
+  .filter(function (text) {
+    return text.length > 2; // Only if the text is longer than 2 characters
+  })
+  .debounce(750 /* Pause for 750ms */ )
+  .distinctUntilChanged(); // Only if the value has changed
+```
