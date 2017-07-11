@@ -2,6 +2,7 @@
 1. [Chrome Dev Tools](#chrome-dev-tools)
 1. [Command line](#command-line)
 1. [JavaScript](#javascript)
+1. [Git](#git)
 
 # Chrome Dev Tools
 
@@ -247,3 +248,8 @@ var keyup = Rx.Observable.fromEvent(input, 'keyup')
   .debounce(750 /* Pause for 750ms */ )
   .distinctUntilChanged(); // Only if the value has changed
 ```
+
+# Git
+#### Pretty git log
+```
+git log --format="%C(auto) %h %d %aI %an %s"
