@@ -255,7 +255,7 @@ var keyup = Rx.Observable.fromEvent(input, 'keyup')
 git log --format="%C(auto) %h %d %aI %an %s"
 ```
 
-#### Commit Message Conventions
+### Commit Message Conventions
 ```
 - [feat] (feature)
 - [fix] (bug fix)
