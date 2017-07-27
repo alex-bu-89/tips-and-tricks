@@ -8,7 +8,7 @@
 
 [Command Line API Reference](https://developers.google.com/web/tools/chrome-devtools/console/command-line-reference)
 
-#### Monitor DOM events and functions in Chrome
+### Monitor DOM events and functions in Chrome
 ```JavaScript
 // subscribe to events
 monitorEvents(document.body, "click");
@@ -23,17 +23,17 @@ getEventListeners(document);
 monitor(someFunction);
 ```
 
-#### Design mode
+### Design mode
 ```js
 document.designMode = 'on'
 ```
 
-#### Copy obj / var to buffer
+### Copy obj / var to buffer
 ```JavaScript
 copy (someVariable)
 ```
 
-#### Link to selected DOM element
+### Link to selected DOM element
 ```js
 // link to selected DOM node
 $0
@@ -45,13 +45,13 @@ console.dir($0)
 $($0).data()
 ```
 
-#### Arrow functions in console
+### Arrow functions in console
 ```js
 // use arrow functions in console
 performance.getEntries().filter(entry => entry.name)
 ```
 
-#### Pause JavaScript execution
+### Pause JavaScript execution
 ```
 - press fn + F8 (osx)
 - inspect elements
@@ -59,44 +59,44 @@ performance.getEntries().filter(entry => entry.name)
 
 # Command line
 
-#### Find files
+### Find files
 ```js
 find ./app/img/ -name '*some.svg'
 ```
-#### Open current dir from webstorm
+### Open current dir from webstorm
 ```js
 wstorm .
 ```
-#### Find text in files (git)
+### Find text in files (git)
 ```
 git grep 'string' -- '*.sass'
 ```
 
 # JavaScript
 
-#### Object.assign() [es6]
+### Object.assign() [es6]
 ```js
 // The Object.assign() method is used to copy the values of all enumerable own properties from one or more source objects to a target object.
 let settings = Object.assign( {}, defaults, options1, options2 );
 ```
 
-#### Console.table
+### Console.table
 ```js
 console.table(["one", "two", "three"]);
 ```
 
-#### Object Initializer [es6]
+### Object Initializer [es6]
 ```js
 // buildUser() returns first, last, fullName
 let { first, last, fullName } = buildUser("Sam", "Williams");
 ```
 
-#### Template string [es6]
+### Template string [es6]
 ```js
 let veryLongText = `Hi ${userName}, this is a very very long text, ${admin.FullName}`;
 ```
 
-#### Spread syntax
+### Spread syntax
 ```js
 // Better apply
 // In cases where you want to use an array as arguments to a function.
@@ -111,12 +111,12 @@ function myFunction(x, y, z) { }
 var args = [0, 1, 2];
 myFunction(...args);
 ```
-#### New Number
+### New Number
 ```js
 var now = new Date();
 console.log(+now) // console.log(new Number(now))
 ```
-#### Measuring perfomance
+### Measuring perfomance
 ```js
 // Constructor.
 function SpeedTest(testImplement, testParams, repetitions) {
@@ -146,7 +146,7 @@ SpeedTest.prototype = {
 };
 ```
 
-#### Prototype extending
+### Prototype extending
 ```js
 // define the Person Class
 function Person() {}
@@ -171,7 +171,7 @@ Student.prototype = Object.create(Person.prototype);
 // correct the constructor pointer because it points to Person
 Student.prototype.constructor = Student;
 ```
-#### Private method
+### Private method
 ```js
 var Auto = (function () {
   var Auto = function () {
@@ -196,7 +196,7 @@ new Auto().privateMethod();
 new Auto().publicMethod();
 ```
 
-#### Parallelize Promises
+### Parallelize Promises
 ```js
 let urls = [
   '/api/commits',
@@ -222,7 +222,7 @@ Promise.all(promises)
  });
 ```
 
-#### Object.is()
+### Object.is()
 ```js
 0 == ' ' // true
 null == undefined // true
@@ -235,7 +235,7 @@ Object.is([1], true); // false
 Object.is(NaN, NaN); // true
 ```
 
-#### RxJS
+### RxJS
 ```js
 // Get all distinct key up events from the input and only fire if long enough and distinct
 var keyup = Rx.Observable.fromEvent(input, 'keyup')
@@ -250,7 +250,7 @@ var keyup = Rx.Observable.fromEvent(input, 'keyup')
 ```
 
 # Git
-#### Pretty git log
+### Pretty git log
 ```
 git log --format="%C(auto) %h %d %aI %an %s"
 ```
