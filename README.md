@@ -73,6 +73,13 @@ wstorm .
 git grep 'string' -- '*.sass'
 ```
 
+### Make symbolic links between files
+```
+ln -s -f /source/ /destination
+```
+`-f` remove existing destination files
+`-s` make symbolic links
+
 # JavaScript
 
 ### Object.assign() [es6]
