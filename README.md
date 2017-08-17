@@ -80,6 +80,13 @@ ln -s -f /source/ /destination
 `-f` remove existing destination files
 `-s` make symbolic links
 
+### Replace placeholders in file
+```
+sed \
+    -e "s|foo|bar|g" \
+    file.txt >> newfile.txt
+```
+
 # JavaScript
 
 ### Object.assign() [es6]
