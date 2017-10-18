@@ -4,6 +4,7 @@
 1. [JavaScript](#javascript)
 1. [TypeScript](#typescript)
 1. [Git](#git)
+1. [Docker](#docker)
 
 # Chrome Dev Tools
 
@@ -306,4 +307,15 @@ git log --format="%C(auto) %h %d %aI %an %s"
 - [refactor]
 - [test] (when adding missing tests)
 - [chore] (maintain)
+```
+
+
+# Docker
+### Remove all images and containers
+```
+#!/bin/bash
+# Delete all containers
+docker rm $(docker ps -a -q)
+# Delete all images
+docker rmi $(docker images -q)
 ```
