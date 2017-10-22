@@ -88,6 +88,15 @@ sed \
     file.txt >> newfile.txt
 ```
 
+# Docker
+### Remove all images and containers
+```
+# Delete all containers
+docker rm $(docker ps -a -q)
+# Delete all images
+docker rmi $(docker images -q)
+```
+
 # JavaScript
 
 ### Object.assign() [es6]
@@ -307,14 +316,4 @@ git log --format="%C(auto) %h %d %aI %an %s"
 - [refactor]
 - [test] (when adding missing tests)
 - [chore] (maintain)
-```
-
-
-# Docker
-### Remove all images and containers
-```
-# Delete all containers
-docker rm $(docker ps -a -q)
-# Delete all images
-docker rmi $(docker images -q)
 ```
