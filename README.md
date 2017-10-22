@@ -313,7 +313,6 @@ git log --format="%C(auto) %h %d %aI %an %s"
 # Docker
 ### Remove all images and containers
 ```
-#!/bin/bash
 # Delete all containers
 docker rm $(docker ps -a -q)
 # Delete all images
