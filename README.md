@@ -5,7 +5,7 @@
 1. [TypeScript](#typescript)
 1. [Git](#git)
 1. [Docker](#docker)
-1. [NPM](#NPM)
+1. [NPM](#npm)
 
 # Chrome Dev Tools
 
