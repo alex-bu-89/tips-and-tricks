@@ -5,6 +5,7 @@
 1. [TypeScript](#typescript)
 1. [Git](#git)
 1. [Docker](#docker)
+1. [NPM](#NPM)
 
 # Chrome Dev Tools
 
@@ -316,4 +317,10 @@ git log --format="%C(auto) %h %d %aI %an %s"
 - [refactor]
 - [test] (when adding missing tests)
 - [chore] (maintain)
+```
+
+# NPM
+
+```
+npm info "eslint-config-airbnb@latest" peerDependencies
 ```
