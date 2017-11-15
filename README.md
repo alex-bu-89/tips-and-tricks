@@ -1,14 +1,18 @@
 # Table of Contents
-1. [Multiple SSH Keys](#multiple-ssh-keys)
+1. [Git](#git)
 1. [Chrome Dev Tools](#chrome-dev-tools)
 1. [Command line](#command-line)
 1. [JavaScript](#javascript)
 1. [TypeScript](#typescript)
-1. [Git](#git)
 1. [Docker](#docker)
 1. [NPM](#npm)
 
-# Multiple SSH Keys
+# Git
+### Pretty git log
+```
+git log --format="%C(auto) %h %d %aI %an %s"
+```
+### Multiple SSH Keys
 list of saved keys
 ```
 ssh-add -l
@@ -311,12 +315,6 @@ window.addEventListener('click', () => x.foo(), 10); // SAFE, method is invoked 
 - Function.bind
 
 [source](https://github.com/Microsoft/TypeScript/wiki/%27this%27-in-TypeScript)
-
-# Git
-### Pretty git log
-```
-git log --format="%C(auto) %h %d %aI %an %s"
-```
 
 ### Commit Message Conventions
 ```
