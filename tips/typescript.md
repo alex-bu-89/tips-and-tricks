@@ -25,14 +25,3 @@ window.addEventListener('click', () => x.foo(), 10); // SAFE, method is invoked 
 - Function.bind
 
 [source](https://github.com/Microsoft/TypeScript/wiki/%27this%27-in-TypeScript)
-
-### Commit Message Conventions
-```
-- [feat] (feature)
-- [fix] (bug fix)
-- [docs] (documentation)
-- [style] (formatting, missing semi colons, …)
-- [refactor]
-- [test] (when adding missing tests)
-- [chore] (maintain)
-```
