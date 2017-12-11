@@ -1,5 +1,5 @@
 # Git
-### Commit Message Conventions
+### Commit message conventions
 ```
 - [feat] (feature)
 - [fix] (bug fix)
