@@ -15,6 +15,7 @@ npm info "eslint-config-airbnb@latest" peerDependencies
 
 ## Update npm packeges
 ```
+npm i -G npm-check-updates
 npm-check-updates -u
 npm-check-updates -a
 ```
