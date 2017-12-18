@@ -7,6 +7,7 @@ find ./app/img/ -name '*some.svg'
 ### Open current dir from webstorm
 ```js
 wstorm .
+atom .
 ```
 ### Find text in files (git)
 ```
