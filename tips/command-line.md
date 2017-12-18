@@ -9,7 +9,7 @@ find ./app/img/ -name '*some.svg'
 git grep 'string' -- '*.sass'
 ```
 
-### Open current dir from webstorm
+### Open current dir from webstorm / atom
 ```js
 wstorm .
 atom .
