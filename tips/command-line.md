@@ -1,10 +1,10 @@
 # Command line
 
-### Find files
+### Search files
 ```js
 find ./app/img/ -name '*some.svg'
 ```
-### Find in files with git
+### Search in files with git
 ```
 git grep 'string' -- '*.sass'
 ```
