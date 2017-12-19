@@ -12,3 +12,9 @@ add key
 ```
 ssh-add ~/.ssh/id_rsa_blabla
 ```
+
+
+### Get current branch name
+```
+git rev-parse --abbrev-ref HEAD
+```
