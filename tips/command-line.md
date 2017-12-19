@@ -1,16 +1,18 @@
 # Command line
 
-### Find files
+### Search files
 ```js
 find ./app/img/ -name '*some.svg'
 ```
-### Open current dir from webstorm
-```js
-wstorm .
-```
-### Find text in files (git)
+### Search in files with git
 ```
 git grep 'string' -- '*.sass'
+```
+
+### Open current dir from webstorm / atom
+```js
+wstorm .
+atom .
 ```
 
 ### Make symbolic links between files
