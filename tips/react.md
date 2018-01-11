@@ -1,12 +1,33 @@
 # React
 
 ### Component life-cycle
-#### constructor
-* set initial state
-* if not using class properties syntax — prepare all class fields and bind functions that will be passed as callbacks
-```
-don't cause any side effects (AJAX calls etc.)
-```
+* #### constructor
+   constructors are perfect for setting up our Component — create any fields (variables starting with this.) or initialize state based on props received.
+   
+  - set initial state
+  - if not using class properties syntax — prepare all class fields and bind functions that will be passed as callbacks
+  - don't cause any side effects (AJAX calls etc.)
+  
+* #### componentWillMount
+  - does not differ much from constructor
+  - fetched data can be no available before the initial render is ready
+  - might being called multiple times before the initial render is called
+  - is called when using server-side-rendering, `componentDidMount` will not
+  - `setState` will not trigger a re-render.
+
+* #### componentWillReceiveProps(nextProps)
+  - will be called in each update life-cycle caused by changes to props
+  - sync state to props
+
+* #### shouldComponentUpdate(nextProps, nextState, nextContext)
+  - use for increasing performance of poor performing Components
+  - don't call this.setState
+  
+* #### componentWillUpdate(nextProps, nextState)
+
+* #### componentDidUpdate(prevProps, prevState, prevContext)
+
+* #### componentDidCatch(errorString, errorInfo)
 
 ### Spread attributes
 
