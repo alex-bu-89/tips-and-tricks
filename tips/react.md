@@ -1,37 +1,58 @@
 # React
 
-### Component life-cycle
-* #### constructor
+### Component life-cycle 
+<details>
+   <summary><b>constructor</b></summary>
    constructors are perfect for setting up our Component — create any fields (variables starting with this.) or initialize state based on props received.
-   
-  - set initial state
-  - if not using class properties syntax — prepare all class fields and bind functions that will be passed as callbacks
-  - don't cause any side effects (AJAX calls etc.)
-  
-* <b>componentWillMount</b>
-  - does not differ much from constructor
-  - fetched data can be no available before the initial render is ready
-  - might being called multiple times before the initial render is called
-  - is called when using server-side-rendering, `componentDidMount` will not
-  - `setState` will not trigger a re-render.
 
-* <b>componentWillReceiveProps(nextProps)</b>
+   - set initial state
+   - if not using class properties syntax — prepare all class fields and bind functions that will be passed as callbacks
+   - don't cause any side effects (AJAX calls etc.)
+</details>
+ 
+<details>
+   <summary><b>componentWillMount</b></summary>
+
+   - does not differ much from constructor
+   - fetched data can be no available before the initial render is ready
+   - might being called multiple times before the initial render is called
+   - is called when using server-side-rendering, `componentDidMount` will not
+   - `setState` will not trigger a re-render.
+</details>
+
+<details>
+   <summary><b>componentWillReceiveProps(nextProps)</b></summary>
+  
   - will be called in each update life-cycle caused by changes to props
   - sync state to props
+</details>
 
-* <b>shouldComponentUpdate(nextProps, nextState, nextContext)</b>
-  - use for increasing performance of poor performing Components
-  - don't call this.setState
+<details>
+   <summary><b>shouldComponentUpdate(nextProps, nextState, nextContext)</b></summary>
   
-* <b>componentWillUpdate(nextProps, nextState)</b>
+  - use for increasing performance of poor performing Components
+  - don't call this.setState
+</details>
 
-* <b>componentDidUpdate(prevProps, prevState, prevContext)</b>
+<details>
+   <summary><b><b>componentWillUpdate(nextProps, nextState)</b></b></summary>
+</details>
 
-* <b>componentDidCatch(errorString, errorInfo)</b>
+<details>
+   <summary><b><b>componentDidUpdate(prevProps, prevState, prevContext)</b></b></summary>
+</details>
 
-* <b>componentDidMount</b>
+<details>
+   <summary><b><b>componentDidCatch(errorString, errorInfo)</b></b></summary>
+</details>
 
-* <b>componentWillUnmount</b>
+<details>
+   <summary><b><b>componentDidMount</b></b></summary>
+</details>
+
+<details>
+   <summary><b><b>componentWillUnmount</b></b></summary>
+</details>
 
 ### Spread attributes
 
