@@ -2,7 +2,7 @@
 
 ### Component life-cycle 
 <details>
-   <summary><b>constructor</b></summary>
+   <summary><b>constructor</summary>
    constructors are perfect for setting up our Component — create any fields (variables starting with this.) or initialize state based on props received.
 
    - set initial state
@@ -11,7 +11,7 @@
 </details>
  
 <details>
-   <summary><b>componentWillMount</b></summary>
+   <summary>componentWillMount</summary>
 
    - does not differ much from constructor
    - fetched data can be no available before the initial render is ready
@@ -21,37 +21,37 @@
 </details>
 
 <details>
-   <summary><b>componentWillReceiveProps(nextProps)</b></summary>
+   <summary>componentWillReceiveProps(nextProps)</summary>
   
   - will be called in each update life-cycle caused by changes to props
   - sync state to props
 </details>
 
 <details>
-   <summary><b>shouldComponentUpdate(nextProps, nextState, nextContext)</b></summary>
+   <summary>shouldComponentUpdate(nextProps, nextState, nextContext)</summary>
   
   - use for increasing performance of poor performing Components
   - don't call this.setState
 </details>
 
 <details>
-   <summary><b><b>componentWillUpdate(nextProps, nextState)</b></b></summary>
+   <summary>componentWillUpdate(nextProps, nextState)</summary>
 </details>
 
 <details>
-   <summary><b><b>componentDidUpdate(prevProps, prevState, prevContext)</b></b></summary>
+   <summary>componentDidUpdate(prevProps, prevState, prevContext)</summary>
 </details>
 
 <details>
-   <summary><b><b>componentDidCatch(errorString, errorInfo)</b></b></summary>
+   <summary>componentDidCatch(errorString, errorInfo)</summary>
 </details>
 
 <details>
-   <summary><b><b>componentDidMount</b></b></summary>
+   <summary>componentDidMount</summary>
 </details>
 
 <details>
-   <summary><b><b>componentWillUnmount</b></b></summary>
+   <summary>componentWillUnmount</summary>
 </details>
 
 ### Spread attributes
