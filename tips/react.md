@@ -8,26 +8,30 @@
   - if not using class properties syntax — prepare all class fields and bind functions that will be passed as callbacks
   - don't cause any side effects (AJAX calls etc.)
   
-* #### componentWillMount
+* <b>componentWillMount</b>
   - does not differ much from constructor
   - fetched data can be no available before the initial render is ready
   - might being called multiple times before the initial render is called
   - is called when using server-side-rendering, `componentDidMount` will not
   - `setState` will not trigger a re-render.
 
-* #### componentWillReceiveProps(nextProps)
+* <b>componentWillReceiveProps(nextProps)</b>
   - will be called in each update life-cycle caused by changes to props
   - sync state to props
 
-* #### shouldComponentUpdate(nextProps, nextState, nextContext)
+* <b>shouldComponentUpdate(nextProps, nextState, nextContext)</b>
   - use for increasing performance of poor performing Components
   - don't call this.setState
   
-* #### componentWillUpdate(nextProps, nextState)
+* <b>componentWillUpdate(nextProps, nextState)</b>
 
-* #### componentDidUpdate(prevProps, prevState, prevContext)
+* <b>componentDidUpdate(prevProps, prevState, prevContext)</b>
 
-* #### componentDidCatch(errorString, errorInfo)
+* <b>componentDidCatch(errorString, errorInfo)</b>
+
+* <b>componentDidMount</b>
+
+* <b>componentWillUnmount</b>
 
 ### Spread attributes
 
