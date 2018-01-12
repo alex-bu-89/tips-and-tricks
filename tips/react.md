@@ -9,7 +9,7 @@
    - if not using class properties syntax — prepare all class fields and bind functions that will be passed as callbacks
    - don't cause any side effects (AJAX calls etc.)
 </details>
- 
+
 <details>
    <summary>componentWillMount</summary>
 
