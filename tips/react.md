@@ -36,22 +36,32 @@
 
 <details>
    <summary>componentWillUpdate(nextProps, nextState)</summary>
+   
+   todo
 </details>
 
 <details>
    <summary>componentDidUpdate(prevProps, prevState, prevContext)</summary>
+   
+   todo
 </details>
 
 <details>
    <summary>componentDidCatch(errorString, errorInfo)</summary>
+   
+   todo
 </details>
 
 <details>
    <summary>componentDidMount</summary>
+   
+   todo
 </details>
 
 <details>
    <summary>componentWillUnmount</summary>
+   
+   todo
 </details>
 
 ### Spread attributes
