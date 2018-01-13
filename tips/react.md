@@ -37,7 +37,8 @@
 <details>
    <summary>componentWillUpdate(nextProps, nextState)</summary>
    
-   todo
+   This function is commonly used to perform state and props synchronization for when parts of your state are based on props.
+   - synchronize state to props
 </details>
 
 <details>
