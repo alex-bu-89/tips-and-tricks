@@ -52,6 +52,8 @@ performance.getEntries().filter(entry => entry.name)
 ```
 
 ### Filter chrome-extension resources in network tab
+
+In the network tab filter box, enter the string
 ```
 -scheme:chrome-extension
 ```
