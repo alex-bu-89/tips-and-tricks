@@ -50,3 +50,8 @@ performance.getEntries().filter(entry => entry.name)
 - press fn + F8 (osx)
 - inspect elements
 ```
+
+### Filter chrome-extension resources in network tab
+```
+-scheme:chrome-extension
+```
