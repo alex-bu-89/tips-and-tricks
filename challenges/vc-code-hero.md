@@ -23,3 +23,25 @@ function* myFunc() {
 
 new myFunc();
 ```
+
+```js
+function foo() {}
+
+function myPromise(delay) {
+	return new Promise (function (resolve, reject) {
+		setTimeout(function(){
+        	reject();
+		}, delay );
+	});
+}
+
+Promise.race([foo(), myPromise(1000)])
+	.then(
+		function() {
+			console.log('foo'); // <--
+		},
+		function(err) {
+			console.log('baz');	
+		}
+	);
+```
