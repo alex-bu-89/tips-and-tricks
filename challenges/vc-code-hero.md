@@ -15,3 +15,11 @@ function(a, f = () => a) {
 	// return [...]
 })(5)
 ```
+
+```js
+function* myFunc() {
+  console.log(this)
+}
+
+new myFunc();
+```
