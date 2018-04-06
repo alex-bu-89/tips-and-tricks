@@ -28,3 +28,8 @@ ssh-add ~/.ssh/id_rsa_blabla
 ```
 git rev-parse --abbrev-ref HEAD
 ```
+
+### Remove all local branches but keep `master`
+```
+git branch | grep -v "master" | xargs git branch -D
+```
