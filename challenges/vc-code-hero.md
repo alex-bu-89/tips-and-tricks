@@ -9,10 +9,10 @@ console.log(~-(2 + '2')); // 21
 ```js
 // it should return [9, 5, 5]
 function(a, f = () => a) {
-	// some code here
-	var b = a;
-	a = 9;
-	// return [...]
+  // some code here
+  var b = a;
+  a = 9;
+  // return [...]
 })(5)
 ```
 
@@ -28,20 +28,20 @@ new myFunc();
 function foo() {}
 
 function myPromise(delay) {
-	return new Promise (function (resolve, reject) {
-		setTimeout(function(){
-        	reject();
-		}, delay );
-	});
+  return new Promise (function (resolve, reject) {
+    setTimeout(function(){
+    reject();
+    }, delay );
+  });
 }
 
 Promise.race([foo(), myPromise(1000)])
-	.then(
-		function() {
-			console.log('foo'); // <--
-		},
-		function(err) {
-			console.log('baz');	
-		}
-	);
+  .then(
+    function() {
+      console.log('foo'); // <--
+    },
+    function(err) {
+      console.log('baz');	
+    }
+  );
 ```
