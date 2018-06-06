@@ -4,7 +4,7 @@
 
 ```js
 class MyClass {
-    private status = "blah";
+    private status = 'blah';
 
     public foo {
         alert(this.status);
