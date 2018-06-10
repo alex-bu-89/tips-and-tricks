@@ -30,7 +30,7 @@ function foo() {}
 function myPromise(delay) {
   return new Promise (function (resolve, reject) {
     setTimeout(function(){
-    reject();
+      reject();
     }, delay );
   });
 }
@@ -41,7 +41,7 @@ Promise.race([foo(), myPromise(1000)])
       console.log('foo'); // <--
     },
     function(err) {
-      console.log('baz');	
+      console.log('baz');
     }
   );
 ```
