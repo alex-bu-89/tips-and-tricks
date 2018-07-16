@@ -45,7 +45,7 @@
 <details>
    <summary>componentDidUpdate(prevProps, prevState, prevContext)</summary>
    
-   todo
+   is executed when the new updated component has been updated in the DOM. This method is used to re trigger the third party libraries used to make sure these libraries also update and reload themselves.
 </details>
 
 <details>
