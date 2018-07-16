@@ -45,25 +45,28 @@
 <details>
    <summary>componentDidUpdate(prevProps, prevState, prevContext)</summary>
    
-   is executed when the new updated component has been updated in the DOM. This method is used to re trigger the third party libraries used to make sure these libraries also update and reload themselves.
+   - is executed when the new updated component has been updated in the DOM. This method is used to re trigger the third party libraries used to make sure these libraries also update and reload themselves.
 </details>
 
 <details>
    <summary>componentDidCatch(errorString, errorInfo)</summary>
    
-   todo
+   - is triggered if the render() function throws an error.
 </details>
 
 <details>
    <summary>componentDidMount</summary>
    
-   todo
+   - is executed after the component did mount on the dom. 
+   - The API calls should be made in componentDidMount method always.
 </details>
 
 <details>
    <summary>componentWillUnmount</summary>
    
-   todo
+   - is executed just before the component gets removed from the DOM.
+   - In this method, we do all the cleanups related to the component. 
+For example, on logout, the user details and all the auth tokens can be cleared before unmounting the main component.
 </details>
 
 ### Spread attributes
