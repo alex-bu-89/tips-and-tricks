@@ -20,4 +20,4 @@
 
 ## Patterns
 
-1. [Brute Force](./patterns/README.md)
+1. [Brute Force](./patterns/README.md#brute-force)
