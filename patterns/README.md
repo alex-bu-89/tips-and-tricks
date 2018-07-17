@@ -1,6 +1,6 @@
-#Patterns
+# Patterns
 
-##Brute Force
+## Brute Force
 
 ```
 Enumerate all possible solutions, and check them for correctness.
