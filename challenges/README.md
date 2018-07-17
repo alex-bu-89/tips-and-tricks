@@ -1,5 +1,6 @@
 # Table of Contents
 1. [Unscramble words](#unscramble-words)
+2. [Remove dublicates from array](#remove-dublicates-from-array)
 
 ## Unscramble words
 ```js
