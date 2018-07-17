@@ -1,4 +1,7 @@
 # Table of Contents
+
+## Tips
+
 1. [Git](./tips/git.md#git)
 1. [Chrome Dev Tools](./tips/chrome-dev-tools.md#chrome-dev-tools)
 1. [Command line](./tips/command-line.md#command-line)
@@ -9,3 +12,12 @@
 1. [Docker](./tips/docker.md#docker)
 1. [NPM](./tips/npm.md#npm)
 1. [Other](./tips/other.md)
+
+## Challenges
+
+1. [Unscramble words](./challenges/README.md#unscramble-words)
+1. [Remove dublicates from array](./challenges/README.md#remove-dublicates-from-array)
+
+## Patterns
+
+1. [Brute Force](./patterns/readme.md)
