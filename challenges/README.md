@@ -1,7 +1,7 @@
 # Table of Contents
 1. [Unscramble words](#unscramble-words)
 
-#### Unscramble words
+## Unscramble words
 ```js
 // unscramble word
 var wordsList = ['love', 'foo', 'blab', 'blay', 'vole', 'evol', 'lovy', 'fdsfdsfdsf'];
@@ -41,7 +41,7 @@ unscramble('ovel');
 
 ```
 
-#### Remove dublicates from array
+## Remove dublicates from array
 ```js
 let removeDublicates = (array) => {
   let result = array.filter((item, index) => {
