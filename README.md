@@ -23,4 +23,4 @@
 1. [Brute Force](./patterns/README.md#brute-force)
 
 ## Algorithms
-[Merge Sort](./algorithms/sortMerge.js)
+1. [Merge Sort](./algorithms/sortMerge.js)
