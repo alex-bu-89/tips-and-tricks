@@ -5,7 +5,6 @@ It accepts two objects as arguments: the first object is the recipe
 for the food, while the second object is the available ingredients.
 Each ingredient's value is number representing how many units there are.
 */
-```js
 let batches = (recipe, available) => {
   const result = [];
 
@@ -41,4 +40,3 @@ batches(
   { milk: 2, sugar: 40, butter: 20 },
   { milk: 5, sugar: 120, butter: 500 }
 )
-```
