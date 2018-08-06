@@ -17,6 +17,7 @@
 
 1. [Unscramble words](./challenges/README.md#unscramble-words)
 1. [Remove dublicates from array](./challenges/README.md#remove-dublicates-from-array)
+1. [Batches](./challenges/README.md#batches.js)
 
 ## Patterns
 
