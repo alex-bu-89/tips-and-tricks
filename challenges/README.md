@@ -59,7 +59,7 @@ removeDublicates([1,1,1,1,1,1]);
 ```
 
 ## Batches
-```
+```js
 let batches = (recipe, available) => {
   const result = [];
 
