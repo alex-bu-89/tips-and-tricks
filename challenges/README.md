@@ -29,11 +29,13 @@ var unscramble = (word) => {
     // if wordToCheck is empty it's a match
     if(wordToCheck.length === 0){
       wordToCheck = ''
+      
       return true
     }
 
     // otherwise not
     wordToCheck = ''
+    
     return false;
   })  
 }
