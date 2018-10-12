@@ -50,5 +50,5 @@ git rebase --continue
 ```
 5. If all good, push to branch and may the force be with you
 ```
-git push -f
+git push origin branch -f
 ```
