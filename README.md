@@ -11,6 +11,7 @@
 1. [Node.js](./tips/node.md)
 1. [Docker](./tips/docker.md#docker)
 1. [NPM](./tips/npm.md#npm)
+1. [Testing](./tips/testing.md)
 1. [Other](./tips/other.md)
 
 ## Challenges
