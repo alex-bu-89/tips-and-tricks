@@ -15,3 +15,9 @@ docker rmi $(docker images -q)
 ```
 Best practices for writing Dockerfiles suggests using COPY where the magic of ADD
 ```
+
+### Rebuild node-sass in container to avoid bindings problem 
+
+```
+CMD ["npm", "rebuild", "node-sass"]
+```
