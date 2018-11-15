@@ -12,12 +12,14 @@
 1. [Node.js](./tips/node.md)
 1. [Docker](./tips/docker.md#docker)
 1. [NPM](./tips/npm.md#npm)
+1. [Testing](./tips/testing.md)
 1. [Other](./tips/other.md)
 
 ## Challenges
 
 1. [Unscramble words](./challenges/README.md#unscramble-words)
 1. [Remove dublicates from array](./challenges/README.md#remove-dublicates-from-array)
+1. [Batches](./challenges/README.md#batches.js)
 
 ## Patterns
 
@@ -25,3 +27,4 @@
 
 ## Algorithms
 1. [Merge Sort](./algorithms/sortMerge.js)
+1. [Left Rotation](./algorithms/leftRotation.js)
