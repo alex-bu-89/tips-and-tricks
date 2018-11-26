@@ -2,7 +2,7 @@
 
 ## Tips
 
-1. [Perfomance](./tips/perfomance.git)
+1. [Perfomance](./tips/perfomance.md)
 1. [Git](./tips/git.md#git)
 1. [Chrome Dev Tools](./tips/chrome-dev-tools.md#chrome-dev-tools)
 1. [Command line](./tips/command-line.md#command-line)
