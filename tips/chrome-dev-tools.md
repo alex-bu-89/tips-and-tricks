@@ -2,6 +2,12 @@
 
 [Command Line API Reference](https://developers.google.com/web/tools/chrome-devtools/console/command-line-reference)
 
+### Filter chrome extension from dev tools
+
+```
+-scheme:chrome-extension
+```
+
 ### Monitor DOM events and functions in Chrome
 ```JavaScript
 // subscribe to events
