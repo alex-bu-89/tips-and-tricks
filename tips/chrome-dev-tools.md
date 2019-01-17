@@ -2,8 +2,10 @@
 
 [Command Line API Reference](https://developers.google.com/web/tools/chrome-devtools/console/command-line-reference)
 
-### Filter chrome extension from dev tools
 
+### Filter chrome-extension resources in network tab
+
+In the network tab filter box, enter the string
 ```
 -scheme:chrome-extension
 ```
@@ -55,11 +57,4 @@ performance.getEntries().filter(entry => entry.name)
 ```
 - press fn + F8 (osx)
 - inspect elements
-```
-
-### Filter chrome-extension resources in network tab
-
-In the network tab filter box, enter the string
-```
--scheme:chrome-extension
 ```
