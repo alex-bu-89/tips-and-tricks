@@ -30,7 +30,7 @@ document.designMode = 'on'
 
 ### Copy obj / var to buffer
 ```JavaScript
-copy (someVariable)
+copy(someVariable)
 ```
 
 ### Link to selected DOM element
