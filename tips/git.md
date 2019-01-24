@@ -52,3 +52,8 @@ git rebase --continue
 ```
 git push origin branch -f
 ```
+
+### Get rid of untracked files
+```
+git clean -f -d
+```
