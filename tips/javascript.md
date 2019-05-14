@@ -1,5 +1,14 @@
 # JavaScript
 
+### Date day to ISO format 0 -> monday
+```js
+const date = new Date('July 22, 2018 07:00:00');
+
+date.getDay()
+
+(date.getDate() + 6) % 7
+```
+
 ### Object.assign() [es6]
 ```js
 // The Object.assign() method is used to copy the values of all enumerable own properties from one or more source objects to a target object.
