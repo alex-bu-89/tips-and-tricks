@@ -1,4 +1,39 @@
 # Git
+
+### Git workflow
+Create your branch and build your feature
+```
+git checkout -b my_feature_branch
+```
+... make your changes
+```
+git add . && git commit -m "My commit message"
+git push origin my_feature_branch
+```
+From time to time, get in sync with master
+```
+git fetch --all
+git rebase origin/master
+```
+Keep working on your branch
+... make your changes ...
+```
+git add . && git commit -m "My commit message"
+git push origin my_feature_branch (if you did rebase before use -f)
+```
+Create your PR on github.
+
+When your PR has been approved, you can squash all your commits
+
+```
+git rebase -i HEAD~3 (3 being the number of commits you want to squash)
+git push origin my_feature_branch (if you did rebase before use -f)
+```
+Now, you can merge to master
+```
+git push origin my_feature_branch:master
+```
+
 ### Commit message conventions
 ```
 - [feat] (feature)
