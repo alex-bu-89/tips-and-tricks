@@ -5,7 +5,7 @@
 1. [Perfomance](./tips/perfomance.md)
 1. [Git](./tips/git.md#git)
 1. [Chrome Dev Tools](./tips/chrome-dev-tools.md#chrome-dev-tools)
-1. [Command line](./tips/command-line.md#command-line)
+1. [Command line / Terminal](./tips/command-line.md#command-line)
 1. [JavaScript](./tips/javascript.md#javascript)
 1. [TypeScript](./tips/typescript.md#typescript)
 1. [React](./tips/react.md)
