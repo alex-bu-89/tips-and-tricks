@@ -1,5 +1,14 @@
 # Command line
 
+### Tree view
+
+Allow to log folders and files as a tree
+```js
+brew install tree
+
+tree
+```
+
 ### Search files
 ```js
 find ./app/img/ -name '*some.svg'
