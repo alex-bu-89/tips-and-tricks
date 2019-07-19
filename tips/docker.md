@@ -1,10 +1,7 @@
 # Docker
-### Remove all images and containers
+### Remove all unused containers, volumes, networks and images
 ```
-# Delete all containers
-docker rm $(docker ps -a -q)
-# Delete all images
-docker rmi $(docker images -q)
+docker system prune -a --volumes
 ```
 
 ### COPY vs ADD
