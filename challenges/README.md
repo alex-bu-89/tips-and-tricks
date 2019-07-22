@@ -1,6 +1,7 @@
 # Table of Contents
 1. [Unscramble words](#unscramble-words)
 2. [Remove dublicates from array](#remove-dublicates-from-array)
+3. [Find first dublicate](#find-first-dublicate)
 
 ## Unscramble words
 ```js
@@ -133,4 +134,32 @@ function sortScores(unorderedScores, highestPossibleScore) {
 }
 
 console.log(sortScores(unsortedScores, HIGHEST_POSSIBLE_SCORE));
+```
+
+
+## Find first dublicate
+
+Given an array a that contains only numbers in the range from 1 to a.length, find the first duplicate number for which the second occurrence has the minimal index. In other words, if there are more than 1 duplicated numbers, return the number for which the second occurrence has a smaller index than the second occurrence of the other number does. If there are no such elements, return -1.
+
+```js
+/**
+ * Finds the first duplicate number 
+ * for which the second occurrence has the minimal index
+ * @param {int[]} arr [2, 1, 3, 5, 3, 2]
+ * @return {int} first duplicate or -1
+ */
+function firstDuplicate(arr){
+  const collection = new Set();
+  
+  for (element of arr) {
+    if (collection.has(element)){
+      
+      return element;
+    } else {
+      collection.add(element);
+    }   
+  }
+
+  return -1;
+}
 ```
