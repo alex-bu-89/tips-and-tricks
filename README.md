@@ -20,7 +20,7 @@
 1. [Unscramble words](./challenges/README.md#unscramble-words)
 1. [Remove dublicates from array](./challenges/README.md#remove-dublicates-from-array)
 1. [Batches](./challenges/README.md#batches)
-1. [Batches](./challenges/README.md#find-first-dublicate)
+1. [Find first dublicate](./challenges/README.md#find-first-dublicate)
 
 ## Patterns
 
