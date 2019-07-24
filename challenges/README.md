@@ -1,7 +1,8 @@
 # Table of Contents
 1. [Unscramble words](#unscramble-words)
-2. [Remove dublicates from array](#remove-dublicates-from-array)
-3. [Find first dublicate](#find-first-dublicate)
+1. [Remove dublicates from array](#remove-dublicates-from-array)
+1. [Batches](#batches)
+1. [Find first dublicate](#find-first-dublicate)
 
 ## Unscramble words
 ```js
