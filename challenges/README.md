@@ -7,9 +7,9 @@
 ## Unscramble words
 ```js
 // unscramble word
-var wordsList = ['love', 'foo', 'blab', 'blay', 'vole', 'evol', 'lovy', 'fdsfdsfdsf'];
+const wordsList = ['love', 'foo', 'blab', 'blay', 'vole', 'evol', 'lovy', 'fdsfdsfdsf'];
 
-var unscramble = (word) => {
+function unscramble(word) {
   let possibleMatch = wordsList
   // match words with the same length
   .filter((w) => {
@@ -48,7 +48,7 @@ unscramble('ovel');
 
 ## Remove dublicates from array
 ```js
-let removeDublicates = (array) => {
+function removeDublicates (array){
   let result = array.filter((item, index) => {
     return array.indexOf(item) == index
   })
@@ -64,7 +64,7 @@ removeDublicates([1,1,1,1,1,1]);
 
 ## Batches
 ```js
-let batches = (recipe, available) => {
+function batches(recipe, available) {
   const result = [];
 
   for (prodName in recipe) {
@@ -149,7 +149,7 @@ Given an array a that contains only numbers in the range from 1 to a.length, fin
  * @param {int[]} arr [2, 1, 3, 5, 3, 2]
  * @return {int} first duplicate or -1
  */
-function firstDuplicate(arr){
+function firstDuplicate(arr) {
   const collection = new Set();
   
   for (element of arr) {
