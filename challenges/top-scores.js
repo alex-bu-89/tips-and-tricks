@@ -3,7 +3,7 @@ let unsortedScores = [37, 89, 41, 65, 91, 53];
 
 function sortScores(unorderedScores, highestPossibleScore) {
     // array of 0s at indices 0..highestPossibleScore
-    var scoreCounts = [];
+    const scoreCounts = [];
     for (var i = 0; i < highestPossibleScore + 1; i++) {
         scoreCounts.push(0);
     }
