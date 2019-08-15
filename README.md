@@ -1,6 +1,6 @@
 # Table of Contents
 
-## Tips
+## [Tips](./tips/)
 
 1. [Perfomance](./tips/perfomance.md)
 1. [Git](./tips/git.md#git)
