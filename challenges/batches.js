@@ -5,7 +5,7 @@ It accepts two objects as arguments: the first object is the recipe
 for the food, while the second object is the available ingredients.
 Each ingredient's value is number representing how many units there are.
 */
-let batches = (recipe, available) => {
+function batches(recipe, available) {
   const result = [];
 
   for (prodName in recipe) {
