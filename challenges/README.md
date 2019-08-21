@@ -4,6 +4,7 @@
 1. [Batches](#batches)
 1. [Sort best scores](#sort-best-scores)
 1. [Find first dublicate](#find-first-dublicate)
+1. [First not repeating character](./firstNotRepeatingCharacter.js)
 
 ## Unscramble words
 ```js
