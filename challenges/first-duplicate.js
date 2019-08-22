@@ -1,4 +1,3 @@
-
 /**
  * Finds the first duplicate number 
  * for which the second occurrence has the minimal index
