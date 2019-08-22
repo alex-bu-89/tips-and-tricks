@@ -15,13 +15,14 @@
 1. [Testing](./tips/testing.md)
 1. [Other](./tips/other.md)
 
-## Challenges
+## [Challenges](./challenges)
 
-1. [Unscramble words](./challenges/README.md#unscramble-words)
-1. [Remove dublicates from array](./challenges/README.md#remove-dublicates-from-array)
-1. [Batches](./challenges/README.md#batches)
-1. [Find first dublicate](./challenges/README.md#find-first-dublicate)
-1. [First not repeating character](./challenges/first-not-repeating-character.js)
+1. [Unscramble words](./challenges/unscramble-words.js)
+1. [Remove dublicates from array](./challenges/remove-dublicates.js)
+1. [Batches](./challenges/batches.js)
+1. [Sort best scores](./challenges/top-scores.js)
+1. [Find first dublicate](./challenges/first-duplicate.js)
+1. [First not repeating character](./challenges/firstNotRepeatingCharacter.js)
 
 ## Patterns
 
