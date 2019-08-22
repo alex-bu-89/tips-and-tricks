@@ -1,8 +1,8 @@
 // unscramble word
-let wordsList = ['love', 'foo', 'blab', 'blay', 'vole', 'evol', 'lovy', 'fdsfdsfdsf'];
+const wordsList = ['love', 'foo', 'blab', 'blay', 'vole', 'evol', 'lovy', 'fdsfdsfdsf'];
 
-let unscramble = (word) => {
-  let possibleMatch = wordsList
+const unscramble = (word) => {
+  const possibleMatch = wordsList
     .filter((w) => {
       // match words with the same length
       return word.length === w.length;
