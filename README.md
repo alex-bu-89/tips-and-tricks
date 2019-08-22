@@ -21,7 +21,7 @@
 1. [Remove dublicates from array](./challenges/README.md#remove-dublicates-from-array)
 1. [Batches](./challenges/README.md#batches)
 1. [Find first dublicate](./challenges/README.md#find-first-dublicate)
-1. [First not repeating character](./challenges/firstNotRepeatingCharacter.js)
+1. [First not repeating character](./challenges/first-not-repeating-character.js)
 
 ## Patterns
 
