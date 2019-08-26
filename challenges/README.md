@@ -5,3 +5,4 @@
 1. [Sort best scores](./top-scores.js)
 1. [Find first dublicate](./first-duplicate.js)
 1. [First not repeating character](./firstNotRepeatingCharacter.js)
+1. [Rotate image](./rotateImage.js)
