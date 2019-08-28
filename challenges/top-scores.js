@@ -4,7 +4,7 @@ let unsortedScores = [37, 89, 41, 65, 91, 53];
 function sortScores(unorderedScores, highestPossibleScore) {
     // array of 0s at indices 0..highestPossibleScore
     const scoreCounts = [];
-    for (var i = 0; i < highestPossibleScore + 1; i++) {
+    for (let i = 0; i < highestPossibleScore + 1; i++) {
         scoreCounts.push(0);
     }
 
@@ -14,14 +14,14 @@ function sortScores(unorderedScores, highestPossibleScore) {
     });
 
     // populate the final sorted array
-    var sortedScores = [];
+    const sortedScores = [];
 
     // for each item in scoreCounts
-    for (var score = highestPossibleScore; score >= 0; score--) {
-        var count = scoreCounts[score];
+    for (let score = highestPossibleScore; score >= 0; score--) {
+        const count = scoreCounts[score];
 
         // for the number of times the item occurs
-        for (var time = 0; time < count; time++) {
+        for (let time = 0; time < count; time++) {
             sortedScores.push(score);
         }
     }
