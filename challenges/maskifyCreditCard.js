@@ -32,3 +32,94 @@ function maskify(creditCard) {
 
     return maskedArr.join('');
 }
+
+/**
+ * Calculates an expression in Reverse Polish notation
+ * 
+ * @param {string} expression - "10000 123 +"
+ * @return {number} 10123
+ */
+function calculate(expression) {
+    const PLUS = '+';
+    const MINUS = '-';
+    const MULTIPLY = '*';
+    const DIVIDE = '/';
+
+    const expressionArr = expression.split(' ');
+    const operators = [PLUS, MINUS, MULTIPLY, DIVIDE];
+    const stack = [];
+
+    if (expressionArr.length === 0) {
+        return 0;
+    }
+
+    expressionArr.forEach((char) => {
+        const digit = Number(char);
+
+        if (!isNaN(digit)) {
+            stack.push(digit);
+        } else if (operators.includes(char) && stack.length > 1) {
+            const last = stack.pop();
+            const secondLast = stack.pop();
+
+            switch (char) {
+                case PLUS:
+                    stack.push(secondLast + last);
+                    break;
+                case MINUS:
+                    stack.push(secondLast - last);
+                    break;
+                case MULTIPLY:
+                    stack.push(secondLast * last);
+                    break;
+                case DIVIDE:
+                    if (last === 0) {
+                        throw new Error('calculate - division by zero is not possible');
+                    }
+
+                    stack.push(secondLast / last);
+                    break;
+            }
+        } else {
+            throw new Error('calculate - character is not recognized. Supported operators: ' + operators.toString());
+        }
+    });
+
+    return stack[stack.length - 1];
+}
+
+/**
+* Takes a number and return it as a string with the correct ordinal indicator suffix (in English)
+* 
+* @param {number} n - example 5
+* @return {string} "5th"
+*/
+function numberToOrdinal(n) {
+    if (typeof n !== 'number' || isNaN(n)) {
+        throw new Error('numberToOrdinal - n should be a number');
+    }
+
+    if (n === 0) {
+        return n;
+    }
+
+    // parse floating integer
+    parsedN = parseInt(n);
+
+    const numberArr = parsedN.toString().split('').map(digit => parseInt(digit));
+    const secondLast = numberArr[numberArr.length - 2];
+    const last = numberArr.pop();
+
+    if (!secondLast || secondLast !== 1) {
+        switch (last) {
+            case 1:
+                return `${parsedN}st`;
+            case 2:
+                return `${parsedN}nd`;
+            case 3:
+                return `${parsedN}rd`;
+        }
+    }
+
+    return `${parsedN}th`;
+}
