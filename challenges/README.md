@@ -7,6 +7,6 @@
 1. [First not repeating character](./firstNotRepeatingCharacter.js)
 1. [Rotate image](./rotateImage.js)
 
-1. [Maskify credit card](./maskifyCreditCard.js)
+1. [Maskify credit card](./maskify-credit-card.js.js)
 1. [Rotate image](./rotateImage.js)
 1. [Rotate image](./rotateImage.js)

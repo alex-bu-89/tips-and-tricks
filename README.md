@@ -24,6 +24,7 @@
 1. [Find first dublicate](./challenges/first-duplicate.js)
 1. [First not repeating character](./challenges/firstNotRepeatingCharacter.js)
 1. [Rotate image](./challenges/rotateImage.js)
+1. [Maskify credit card](./challenges/maskify-credit-card.js.js)
 
 ## Patterns
 
