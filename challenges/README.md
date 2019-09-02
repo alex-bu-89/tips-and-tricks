@@ -8,5 +8,5 @@
 1. [Rotate image](./rotateImage.js)
 
 1. [Maskify credit card](./maskify-credit-card.js.js)
-1. [Rotate image](./rotateImage.js)
+1. [Number to ordinal](./number-to-ordinal.js)
 1. [Rotate image](./rotateImage.js)

@@ -25,6 +25,8 @@
 1. [First not repeating character](./challenges/firstNotRepeatingCharacter.js)
 1. [Rotate image](./challenges/rotateImage.js)
 1. [Maskify credit card](./challenges/maskify-credit-card.js.js)
+1. [Number to ordinal](./challenges/number-to-ordinal.js)
+
 
 ## Patterns
 
