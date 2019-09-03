@@ -6,7 +6,6 @@
 1. [Find first dublicate](./first-duplicate.js)
 1. [First not repeating character](./firstNotRepeatingCharacter.js)
 1. [Rotate image](./rotateImage.js)
-
 1. [Maskify credit card](./maskify-credit-card.js.js)
 1. [Number to ordinal](./number-to-ordinal.js)
-1. [Rotate image](./rotateImage.js)
+1. [Revers polish notation](./revers-polish-notation.js)

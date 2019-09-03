@@ -26,7 +26,7 @@
 1. [Rotate image](./challenges/rotateImage.js)
 1. [Maskify credit card](./challenges/maskify-credit-card.js.js)
 1. [Number to ordinal](./challenges/number-to-ordinal.js)
-
+1. [Revers polish notation](./challenges//revers-polish-notation.js)
 
 ## Patterns
 
