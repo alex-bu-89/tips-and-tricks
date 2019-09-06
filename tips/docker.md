@@ -1,8 +1,13 @@
 # Docker
 
-### build Dockerfile
+### Build from Dockerfile
 ```
 docker build -t appname:local -f docker/Dockerfile .
+```
+
+### Run docker image with bash
+```
+docker run -it appname:local /bin/bash
 ```
 
 ### Remove all unused containers, volumes, networks and images
