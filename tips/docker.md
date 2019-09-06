@@ -1,4 +1,10 @@
 # Docker
+
+### build Dockerfile
+```
+docker build -t appname:local -f docker/Dockerfile .
+```
+
 ### Remove all unused containers, volumes, networks and images
 ```
 docker system prune -a --volumes
