@@ -35,3 +35,6 @@
 ## Algorithms
 1. [Merge Sort](./algorithms/sortMerge.js)
 1. [Left Rotation](./algorithms/leftRotation.js)
+
+## Playground
+1. [Remove NodeJS](./playground/bash/remove-nodejs.sh)
