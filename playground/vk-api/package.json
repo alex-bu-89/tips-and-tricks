@@ -1,0 +1,15 @@
+{
+  "name": "vk-api",
+  "version": "0.0.1",
+  "description": "vk api sandbox",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "query-string": "^6.1.0",
+    "request": "^2.87.0",
+    "request-promise-native": "^1.0.5"
+  }
+}
