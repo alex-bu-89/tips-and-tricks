@@ -1,0 +1,35 @@
+@import "./../../variables";
+
+.player-search-form {
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  input {
+    width: auto;
+    display: inline-block;
+    font-size: 18px;
+    color: $text-color;
+  }
+
+  button {
+    border-radius: 200px;
+    padding: 6px 20px;
+    background-color: $main-color;
+    border-color: $main-color;
+
+    &:hover, &:active, &:focus {
+      background-color: $main-color-dark !important;
+      border-color: $main-color-dark !important;
+    }
+  }
+
+  &__loading {
+    color: $main-color !important;
+    position: absolute;
+    right: 99px;
+    top: 10px;
+    height: 1rem;
+    width: 1rem;
+  }
+}
