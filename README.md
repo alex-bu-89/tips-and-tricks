@@ -37,4 +37,4 @@
 1. [Left Rotation](./algorithms/leftRotation.js)
 
 ## Playground
-1. [Remove NodeJS](./playground/bash/remove-nodejs.sh)
+1. [Playground](./playground/)
