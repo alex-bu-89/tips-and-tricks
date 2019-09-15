@@ -34,7 +34,7 @@ body > header {
     padding: 20px 10px;
   }
 
-  &_content {
+  &__content {
     width: 80%;
     max-width: 280px;
     height: 100%;
@@ -43,10 +43,10 @@ body > header {
     background-color: #fff;
     box-shadow: 1px 1px 5px #999;
     backface-visibility: hidden;
-  }
 
-  &_hidden {
-    transform: translateX(-103%);
+    &__hidden {
+      transform: translateX(-103%);
+    }
   }
 
   ul {
