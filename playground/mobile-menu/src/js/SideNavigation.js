@@ -48,9 +48,9 @@ export default class SideNavigation {
   }
 
   onContainerClick(e) {
-    // if (e.target === this.container) {
-    //   this.hide();
-    // }
+    if (e.target === this.container) {
+      this.hide();
+    }
   }
 
   onPointerDown(e) {
