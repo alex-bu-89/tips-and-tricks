@@ -9,7 +9,6 @@ export default class SideNavigation {
 
     this.close.addEventListener('click', this.hide.bind(this));
     this.container.addEventListener('click', this.onContainerClick.bind(this));
-    
     this.container.addEventListener('pointerdown', this.onPointerDown.bind(this));
     this.container.addEventListener('pointermove', this.onPointerMove.bind(this));
     this.container.addEventListener('pointerup', this.onPointerUp.bind(this));
@@ -18,84 +17,76 @@ export default class SideNavigation {
   }
 
   hide() {
+    console.log('----- hide ');
     this.container.classList.add('side-nav__hidden');
     this.sidenav.classList.add('side-nav__content__hidden');
-    console.log('----- hide');
   }
 
   show() {
+    console.log('----- show');
     this.container.classList.remove('side-nav__hidden');
     this.sidenav.classList.remove('side-nav__content__hidden');
-    console.log('----- show');
   }
 
   updatePosition() {
     requestAnimationFrame(() => {
       const diff = Math.min(10, this.currentPosition - this.startPosition);
       this.sidenav.style.transform = `translateX(${diff}px)`;
-      console.log('----- updatePosition', diff);
     });
   }
 
   resetPosition() {
     requestAnimationFrame(() => {
-      console.log('----- resetPosition');
       this.sidenav.style.transform = '';
     });
   }
 
   disableTransition() {
-    console.log('----- disableTransition');
     this.sidenav.style.transition = 'none';
   }
 
   enableTransition() {
-    console.log('----- enableTransition');
     this.sidenav.style.transition = '';
   }
 
   onContainerClick(e) {
-    console.log('----- onContainerClick');
     if (e.target === this.container) {
       this.hide();
     }
   }
 
   onPointerDown(e) {
-    console.log('----- onPointerDown', e.pageX, e.pageY);
     this.startPosition = e.pageX;
     this.currentPosition = e.pageX;
     this.isGestureStarted = true;
 
-    // this.sidenav.setPointerCapture(e.pointerId);
+    this.sidenav.setPointerCapture(e.pointerId);
 
-    // this.disableTransition();
+    this.disableTransition();
   }
 
   onPointerUp(e) {
-    console.log('----- onPointerUp', e.pageX, e.pageY);
-    // this.currentPosition = e.pageX;
-    // this.isGestureStarted = false;
+    this.currentPosition = e.pageX;
+    this.isGestureStarted = false;
 
-    // this.sidenav.releasePointerCapture(e.pointerId);
+    this.sidenav.releasePointerCapture(e.pointerId);
 
-    // this.enableTransition();
-    // this.resetPosition();
+    this.enableTransition();
+    this.resetPosition();
 
-    // if (this.currentPosition - this.startPosition < -50) {
-    //   this.hide();
-    // } else {
-    //   this.show();
-    // }
+    if (this.currentPosition - this.startPosition < -50) {
+      this.hide();
+    } else {
+      this.show();
+    }
   }
 
   onPointerMove(e) {
-    console.log('----- onPointerMove', e.pageX, e.pageY);
-    // if (!this.isGestureStarted) {
-    //   return;
-    // }
+    if (!this.isGestureStarted) {
+      return;
+    }
 
-    // this.currentPosition = e.pageX;
-    // this.updatePosition();
+    this.currentPosition = e.pageX;
+    this.updatePosition();
   }
 }
