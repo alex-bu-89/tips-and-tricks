@@ -1,6 +1,6 @@
 # Git
 
-### Git workflow
+## Git workflow
 Create your branch and build your feature
 ```
 git checkout -b my_feature_branch
@@ -34,7 +34,7 @@ Now, you can merge to master
 git push origin my_feature_branch:master
 ```
 
-### Commit message conventions
+## Commit message conventions
 ```
 - [feat] (feature)
 - [fix] (bug fix)
@@ -44,11 +44,11 @@ git push origin my_feature_branch:master
 - [test] (when adding missing tests)
 - [chore] (maintain)
 ```
-### Pretty git log
+## Pretty git log
 ```
 git log --format="%C(auto) %h %d %aI %an %s"
 ```
-### Multiple SSH Keys
+## Multiple SSH Keys
 list of saved keys
 ```
 ssh-add -l
@@ -59,17 +59,17 @@ ssh-add ~/.ssh/id_rsa_blabla
 ```
 
 
-### Get current branch name
+## Get current branch name
 ```
 git rev-parse --abbrev-ref HEAD
 ```
 
-### Remove all local branches but keep master
+## Remove all local branches but keep master
 ```
 git branch | grep -v "master" | xargs git branch -D
 ```
 
-### Change the commit author for one specific commit
+## Change the commit author for one specific commit
 1. Rebase to commit from which the autor should be changed 
 ```
 git rebase -i `commit`
@@ -88,7 +88,7 @@ git rebase --continue
 git push origin branch -f
 ```
 
-### Get rid of untracked files
+## Get rid of untracked files
 ```
 git clean -f -d
 ```
