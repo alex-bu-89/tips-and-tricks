@@ -13,10 +13,10 @@ In the network tab filter box, enter the string
 ## Monitor DOM events and functions in Chrome
 ```JavaScript
 // subscribe to events
-monitorEvents(document.body, "click");
+monitorEvents(document.body, 'click');
 
 // unsubscribe from events
-unmonitorEvents(document.body, "click")
+unmonitorEvents(document.body, 'click')
 
 // view event listeners registered on objects
 getEventListeners(document);
