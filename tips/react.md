@@ -77,6 +77,6 @@ Let us imagine that you have a component that accepts N number of properties. Pa
 ```
 
 ```js
-var props = { x: 1, y: 1, z:1 };
+const props = { x: 1, y: 1, z:1 };
 <Component {...props} />
 ```
