@@ -1,7 +1,7 @@
 # Sort merge
 
-Rotate left operation on an array< br />
-Shifts each element to the left< br />
+Rotate left operation on an array<br>
+Shifts each element to the left<br>
 For example [1,2,3,4,5] => [5,1,2,3,4]
 
 ## Implementation in Typescript
