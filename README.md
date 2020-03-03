@@ -30,11 +30,12 @@
 
 ## Patterns
 
-1. [Brute Force](./patterns/README.md#brute-force)
+1. [Brute Force](./patterns/brute-force.md)
+1. [Greedy](./patterns/greedy.md)
 
 ## Algorithms
-1. [Merge Sort](./algorithms/sortMerge.js)
-1. [Left Rotation](./algorithms/leftRotation.js)
+1. [Merge Sort](./algorithms/sort-merge.md)
+1. [Left Rotation](./algorithms/left-rotation.md)
 
 ## Playground
 1. [Playground](./playground/)
