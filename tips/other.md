@@ -1,6 +1,6 @@
 # Other tips
 
-### Semantic Versioning 2.0.0
+## Semantic Versioning 2.0.0
 
 Given a version number MAJOR.MINOR.PATCH, increment the:
 
