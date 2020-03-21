@@ -1,4 +1,4 @@
-# Perfomance
+# Browser perfomance
 
 ## Performance Baseline
 
