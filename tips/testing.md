@@ -1,6 +1,6 @@
 # Testing
 
-### Mocha
+## Mocha
 
 Run single tests
 ```

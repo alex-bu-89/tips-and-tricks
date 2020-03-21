@@ -1,6 +1,7 @@
 # NPM
 
 ## Get peer dependencies
+
 ```
 npm info "eslint-config-airbnb@latest" peerDependencies
 ```

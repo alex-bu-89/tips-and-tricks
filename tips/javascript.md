@@ -1,59 +1,84 @@
 # JavaScript
 
-### Date day to ISO format 0 -> monday
+## Make monday the first day of the week
+
 ```js
-const date = new Date('July 22, 2018 07:00:00');
-
-date.getDay()
-
-(date.getDate() + 6) % 7
+const date = new Date('2020-03-23'); // Mon Mar 23 2020
+date.getDay() // 1
+(date.getDay() + 6) % 7 // 0
 ```
 
-### Object.assign() [es6]
+## Object.assign()
+
+Pros:
+* Functions can be copied from source to destination object.
+* Object.assign can be used to copy multiple object properties.
+
+Cons:
+* Cannot copy through non-enumerable properties.
+* Does not copy prototype properties and methods.
+* Does not create a deep copy of the source object
+
 ```js
 // The Object.assign() method is used to copy the values of all enumerable own properties from one or more source objects to a target object.
-let settings = Object.assign( {}, defaults, options1, options2 );
+const settings = Object.assign( {}, defaults, options1, options2 );
 ```
 
-### Console.table
+source: https://medium.com/better-programming/deep-and-shallow-copy-in-javascript-110f395330c5
+
+## Console.table
+
 ```js
 console.table(["one", "two", "three"]);
 ```
 
-### Object Initializer [es6]
+## Object destructuring
+
 ```js
-// buildUser() returns first, last, fullName
-let { first, last, fullName } = buildUser("Sam", "Williams");
+function buildUser(first, last, fullName) {
+  return {
+    first,
+    last,
+    fullName 
+  };
+}
+
+const { first, last, fullName } = buildUser("Sam", "Williams");
 ```
 
-### Template string [es6]
+## Template string
+
 ```js
-let veryLongText = `Hi ${userName}, this is a very very long text, ${admin.FullName}`;
+const veryLongText = `Hi ${userName}, this is a very very long text, ${admin.FullName}`;
 ```
 
-### Spread syntax
+## Spread syntax
+
 ```js
 // Better apply
 // In cases where you want to use an array as arguments to a function.
 
 // Old
 function myFunction(x, y, z) { }
-var args = [0, 1, 2];
+const args = [0, 1, 2];
 myFunction.apply(null, args);
 
 // New (spread syntax)
 function myFunction(x, y, z) { }
-var args = [0, 1, 2];
+const args = [0, 1, 2];
 myFunction(...args);
 ```
-### New Number
+
+### New number
+
 ```js
-var now = new Date();
-console.log(+now) // console.log(new Number(now))
+const now = new Date();
+console.log(+now) // same as new Number(now)
 ```
 ### Measuring perfomance
+
 ```js
-// Constructor.
+// Constructor
 function SpeedTest(testImplement, testParams, repetitions) {
   this.testImplement = testImplement;
   this.testParams = testParams;
@@ -63,10 +88,10 @@ function SpeedTest(testImplement, testParams, repetitions) {
 
 // Add the methods to prototype
 SpeedTest.prototype = {
-  startTest: function(){
-    var beginTime, endTime, sumTimes = 0;
+  startTest: function() {
+    let beginTime, endTime, sumTimes = 0;
 
-    for (var i = 0, x = this.repetitions.length; x < i; i++) {
+    for (let i = 0, x = this.repetitions.length; x < i; i++) {
       beginTime = +newDate();
       this.testImplement( this.testParams );
       endTime = +newDate();
@@ -74,14 +99,17 @@ SpeedTest.prototype = {
     }
 
     this.average = sumTimes / this.repetitions;
-    return console.log("Average execution across " +
-                        this.repetitions + ": " +
+
+    console.log('Average execution across ' +
+                        this.repetitions + ': ' +
                         this.average);
+                      
+    return this.average;
   }
 };
 ```
 
-### Prototype extending
+## Prototype extending
 ```js
 // define the Person Class
 function Person() {}
@@ -94,7 +122,7 @@ Person.prototype.sayHello = function(){
   alert ('hello');
 };
 
-// define the Student class
+// define the student class
 function Student() {
   // Call the parent constructor
   Person.call(this);
@@ -106,10 +134,12 @@ Student.prototype = Object.create(Person.prototype);
 // correct the constructor pointer because it points to Person
 Student.prototype.constructor = Student;
 ```
-### Private method
+
+## Private method
+
 ```js
-var Auto = (function () {
-  var Auto = function () {
+const Auto = (function () {
+  const Auto = function () {
     this.doors = 4;
   }
 
@@ -117,7 +147,7 @@ var Auto = (function () {
     privateMethod.call(this);
   }
 
-  var privateMethod = function () {
+  const privateMethod = function () {
     console.log(this.doors);
   }
 
@@ -131,9 +161,10 @@ new Auto().privateMethod();
 new Auto().publicMethod();
 ```
 
-### Parallelize Promises
+## Parallelize Promises
+
 ```js
-let urls = [
+const urls = [
   '/api/commits',
   '/api/issues/opened',
   '/api/issues/assigned',
@@ -142,13 +173,8 @@ let urls = [
   '/api/pullrequests'
 ];
 
-let promises = urls.map((url) => {
-  return new Promise((resolve, reject) => {
-    $.ajax({ url: url })
-      .done((data) => {
-        resolve(data);
-      });
-  });
+const promises = urls.map((url) => {
+  return window.fetch(url)
 });
 
 Promise.all(promises)
@@ -157,7 +183,8 @@ Promise.all(promises)
  });
 ```
 
-### Object.is()
+## Object.is()
+
 ```js
 0 == ' ' // true
 null == undefined // true
@@ -170,16 +197,16 @@ Object.is([1], true); // false
 Object.is(NaN, NaN); // true
 ```
 
-### RxJS
+## RxJS
 ```js
 // Get all distinct key up events from the input and only fire if long enough and distinct
-var keyup = Rx.Observable.fromEvent(input, 'keyup')
+const keyup = Rx.Observable.fromEvent(input, 'keyup')
   .map(function (e) {
-    return e.target.value; // Project the text from the input
+    return e.target.value; // project the text from the input
   })
   .filter(function (text) {
-    return text.length > 2; // Only if the text is longer than 2 characters
+    return text.length > 2; // only if the text is longer than 2 characters
   })
-  .debounce(750 /* Pause for 750ms */ )
-  .distinctUntilChanged(); // Only if the value has changed
+  .debounce(750) // pause for 750ms
+  .distinctUntilChanged(); // only if the value has changed
 ```

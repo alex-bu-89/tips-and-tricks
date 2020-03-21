@@ -1,7 +1,6 @@
 # Table of Contents
 
-## [Tips](./tips/)
-
+## Tips
 1. [Browser perfomance](./tips/perfomance.md)
 1. [Git](./tips/git.md#git)
 1. [Chrome Dev Tools](./tips/chrome-dev-tools.md#chrome-dev-tools)
@@ -15,8 +14,7 @@
 1. [Testing](./tips/testing.md)
 1. [Other](./tips/other.md)
 
-## [Challenges](./challenges)
-
+## Challenges
 1. [Unscramble words](./challenges/unscramble-words.js)
 1. [Remove dublicates from array](./challenges/remove-dublicates.js)
 1. [Batches](./challenges/batches.js)
@@ -29,7 +27,6 @@
 1. [Revers polish notation](./challenges//revers-polish-notation.js)
 
 ## Patterns
-
 1. [Brute Force](./patterns/brute-force.md)
 1. [Greedy](./patterns/greedy.md)
 

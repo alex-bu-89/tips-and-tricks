@@ -1,6 +1,7 @@
 # React
 
-### Component life-cycle 
+## Component life-cycle 
+
 <details>
    <summary>constructor</summary>
    constructors are perfect for setting up our Component — create any fields (variables starting with this.) or initialize state based on props received.
