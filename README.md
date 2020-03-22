@@ -26,13 +26,11 @@
 1. [Number to ordinal](./challenges/number-to-ordinal.js)
 1. [Revers polish notation](./challenges//revers-polish-notation.js)
 
-## Patterns
-1. [Brute Force](./patterns/brute-force.md)
-1. [Greedy](./patterns/greedy.md)
-
 ## Algorithms
 1. [Merge Sort](./algorithms/sort-merge.md)
 1. [Left Rotation](./algorithms/left-rotation.md)
+1. [Brute Force](./algorithms/brute-force.md)
+1. [Greedy](./algorithms/greedy.md)
 
 ## Playground
 1. [Playground](./playground/)
