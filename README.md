@@ -27,7 +27,8 @@
 1. [Revers polish notation](./challenges//revers-polish-notation.js)
 
 ## Algorithms
-1. [Merge Sort](./algorithms/sort-merge.md)
+1. Sort
+    * [Merge Sort](./algorithms/sort-merge.md)
 1. [Left Rotation](./algorithms/left-rotation.md)
 1. [Brute Force](./algorithms/brute-force.md)
 1. [Greedy](./algorithms/greedy.md)
