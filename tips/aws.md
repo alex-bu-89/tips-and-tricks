@@ -1,4 +1,4 @@
-# Setting up AWS
+# AWS
 
 ## Setting up AWS root user
 
