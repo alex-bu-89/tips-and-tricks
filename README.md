@@ -1,6 +1,7 @@
 # Table of Contents
 
 ## Tips
+1. [AWS](./tips/aws.md)
 1. [Browser perfomance](./tips/perfomance.md)
 1. [Git](./tips/git.md#git)
 1. [Chrome Dev Tools](./tips/chrome-dev-tools.md#chrome-dev-tools)
