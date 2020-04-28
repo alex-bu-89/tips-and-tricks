@@ -16,6 +16,8 @@
 1. [Other](./tips/other.md)
 
 ## Challenges
+### Implementation in Javascript
+
 1. [Unscramble words](./challenges/unscramble-words.js)
 1. [Remove dublicates from array](./challenges/remove-dublicates.js)
 1. [Batches](./challenges/batches.js)
@@ -26,6 +28,9 @@
 1. [Maskify credit card](./challenges/maskify-credit-card.js.js)
 1. [Number to ordinal](./challenges/number-to-ordinal.js)
 1. [Revers polish notation](./challenges//revers-polish-notation.js)
+
+### Implementation in Python
+1. [Romeo](./challenges/python/romeo/romeo.py)
 
 ## Algorithms
 1. Sort
