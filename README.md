@@ -16,6 +16,7 @@
 1. [Other](./tips/other.md)
 
 ## Challenges
+
 ### Implementation in Javascript
 
 1. [Unscramble words](./challenges/unscramble-words.js)
