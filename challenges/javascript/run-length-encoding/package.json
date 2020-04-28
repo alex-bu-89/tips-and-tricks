@@ -1,0 +1,32 @@
+{
+    "name": "challenges",
+    "description": "Challenges in Javascript.",
+    "author": "Alexander Buyanov",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alex-bu-89/tips-and-tricks.git"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.8.3",
+        "@babel/core": "^7.8.3",
+        "@babel/plugin-proposal-class-properties": "^7.8.3",
+        "@babel/preset-env": "^7.8.3",
+        "@babel/preset-typescript": "^7.8.3",
+        "@types/jest": "^25.2.1",
+        "jest": "^25.1.0",
+        "typescript": "^3.7.5"
+    },
+    "jest": {
+        "modulePathIgnorePatterns": [
+            "package.json"
+        ]
+    },
+    "scripts": {
+        "start": "npm run build && node dist/run-length-encoding.js",
+        "build": "babel ./*.ts --out-dir dist --extensions \".ts,.tsx\" --source-maps inline",
+        "test": "npm run build && jest --no-cache ./dist/*.spec.js"
+    },
+    "license": "MIT",
+    "dependencies": {}
+}
