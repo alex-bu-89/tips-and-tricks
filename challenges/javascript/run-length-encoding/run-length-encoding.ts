@@ -22,5 +22,3 @@ export function decode(input: string): string {
 
     return result;
 }
-
-decode('4AF3BCF10FCD')
