@@ -28,11 +28,11 @@ provider:
     AWS_NODEJS_CONNECTION_REUSE_ENABLED: 1
 
 functions:
-  publishProductsFromCSV:
-    handler: src/handlers/importer.publishProductsFromCSV
+  importProductsFromCSV:
+    handler: src/handlers/importer.importProductsFromCSV
     memorySize: 1536MB
     timeout: 30
     events:
       - http:
-          method: get
-          path: /publishProductsFromCSV
+          method: post
+          path: /importProductsFromCSV

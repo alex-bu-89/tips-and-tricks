@@ -3,7 +3,9 @@ import 'source-map-support/register';
 import * as puppeteer from 'puppeteer';
 import { getChrome } from '../chrome-script';
 
-export const publishProductsFromCSV: APIGatewayProxyHandler = async (event, _context) => {
+export const importProductsFromCSV: APIGatewayProxyHandler = async (event, _context) => {
+  console.log('------', event['csvUrl']);
+
   // const { url } = event.queryStringParameters;
   const url = 'https://google.com';
   const chrome = await getChrome();
