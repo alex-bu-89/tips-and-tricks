@@ -1,0 +1,1 @@
+start: serverless invoke local --function importSvc
