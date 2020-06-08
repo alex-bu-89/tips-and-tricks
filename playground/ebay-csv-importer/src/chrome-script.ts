@@ -3,7 +3,7 @@ import request from 'superagent';
 
 export const getChrome = async () => {
   const chrome = await launchChrome({
-    flags: ['--window-size=1280,1696', '--hide-scrollbars', '--headless']
+    flags: ['--window-size=1280,1696', '--defaultViewport=null', '--hide-scrollbars', '--headless']
   });
 
   const response = await request
