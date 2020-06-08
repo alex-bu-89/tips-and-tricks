@@ -1,1 +1,1 @@
-start: serverless invoke local --function importSvc
+import: serverless invoke local --function importSvc
