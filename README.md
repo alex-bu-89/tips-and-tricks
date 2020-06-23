@@ -40,6 +40,3 @@
 1. [Left Rotation](./algorithms/left-rotation.md)
 1. [Brute Force](./algorithms/brute-force.md)
 1. [Greedy](./algorithms/greedy.md)
-
-## Playground
-1. [Playground](./playground/)
