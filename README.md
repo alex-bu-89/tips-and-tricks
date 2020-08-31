@@ -13,6 +13,7 @@
 1. [Docker](./tips/docker.md#docker)
 1. [NPM](./tips/npm.md#npm)
 1. [Testing](./tips/testing.md)
+1. [CSS](./tips/css.md)
 1. [Other](./tips/other.md)
 
 ## Challenges
