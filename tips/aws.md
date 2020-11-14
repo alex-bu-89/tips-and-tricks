@@ -15,3 +15,6 @@
 * Creating Groups
 * Creating IAM Policies that enforce MFA
 * Creating Users
+
+## Connect to EC2 with SSH
+`ssh -i ./key.pem ec2-user@11.111.11.1`
