@@ -43,3 +43,18 @@ const user: PartialUser = {
     name: "John"
 }
 ```
+
+## Make your optional fields required
+```ts
+type User = {
+    name: string;
+    age?: number;
+    gender?: string;
+}
+
+const user: Required<User> = { // Property 'gender' is missing in type
+    name: "John",
+    age: 23,
+    // gender: "male"
+}
+```
