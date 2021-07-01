@@ -88,3 +88,75 @@ const itemPreview: ItemPreview = {
     description: 'Bar', // description is not assignable to type 'ItemPreview'.
 }
 ```
+
+## Exclude Properties from a Type
+
+```ts
+type Item = {
+    name: string;
+    description: string;
+    price: number;
+    currency: string;
+    image: string;
+}
+
+type Pricelessitem = Omit<Item, 'price'| 'currency'>
+
+const item: Item = {
+    name: 'Foo',
+    description: 'Bar',
+    price: 234,
+    currency: 'EUR',
+    image: '',
+} 
+
+const itemPreview: Pricelessitem = {
+    name: 'Foo',
+    image: '',
+    description: 'Bar',
+    currency: 'EUR', // currency is not assignable to type 'ItemPreview'.
+} 
+```
+
+## Create Immutable Types
+
+readonly:
+
+```ts
+type User = {
+    readonly name: string;
+    readonly age: number;
+    readonly education: {
+        readonly degree: string;
+    };
+    readonly skills: Readonly<string[]>;
+}
+
+const user: User = {
+    name: 'John',
+    age: 23,
+    education: {
+        degree: 'SE',
+    },
+    skills: ['JS', 'TS']
+}
+
+user.name = 'Foo';
+user.age = 24;
+user.education = {
+    degree: 'Foo'
+};
+user.education.degree = 'Foo';
+user.skills = ['Foo'];
+user.skills.push('Foo');
+```
+
+const assertions:
+
+```ts 
+const newUser = {
+    name: 'John'
+} as const;
+
+newUser.name = 'Foo';
+```
