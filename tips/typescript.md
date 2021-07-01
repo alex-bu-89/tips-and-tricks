@@ -154,9 +154,9 @@ user.skills.push('Foo');
 const assertions:
 
 ```ts 
-const newUser = {
+const user = {
     name: 'John'
 } as const;
 
-newUser.name = 'Foo';
+user.name = 'Foo';
 ```
