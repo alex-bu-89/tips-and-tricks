@@ -28,3 +28,17 @@ window.addEventListener('click', () => x.foo(), 10); // SAFE, method is invoked 
 - Function.bind
 
 [source](https://github.com/Microsoft/TypeScript/wiki/%27this%27-in-TypeScript)
+
+## Use Partial types
+```ts
+type User = {
+    name: string;
+    age: number;
+    gender: string;
+}
+
+type PartialUser = Partial<User>;
+const user: PartialUser = {
+    name: "John"
+}
+```
