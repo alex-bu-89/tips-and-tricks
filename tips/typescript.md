@@ -38,6 +38,7 @@ type User = {
 }
 
 type PartialUser = Partial<User>;
+
 const user: PartialUser = {
     name: "John"
 }
