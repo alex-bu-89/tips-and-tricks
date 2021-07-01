@@ -61,7 +61,7 @@ const user: Required<User> = { // Property 'gender' is missing in type
 }
 ```
 
-## Create a Type with Some Fields of Another Type
+## Create a type with some fields of another type
 
 ```ts
 type Item = {
