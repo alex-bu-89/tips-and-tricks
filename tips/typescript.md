@@ -30,6 +30,7 @@ window.addEventListener('click', () => x.foo(), 10); // SAFE, method is invoked 
 [source](https://github.com/Microsoft/TypeScript/wiki/%27this%27-in-TypeScript)
 
 ## Use Partial types
+
 ```ts
 type User = {
     name: string;
@@ -40,11 +41,12 @@ type User = {
 type PartialUser = Partial<User>;
 
 const user: PartialUser = {
-    name: "John"
+    name: 'John'
 }
 ```
 
 ## Make your optional fields required
+
 ```ts
 type User = {
     name: string;
@@ -53,8 +55,36 @@ type User = {
 }
 
 const user: Required<User> = { // Property 'gender' is missing in type
-    name: "John",
+    name: 'John',
     age: 23,
-    // gender: "male"
+    // gender: 'male'
+}
+```
+
+## Create a Type with Some Fields of Another Type
+
+```ts
+type Item = {
+    name: string;
+    description: string;
+    price: number;
+    currency: string;
+    image: string;
+}
+
+type ItemPreview = Pick<Item, 'name'| 'image'>
+
+const item: Item = {
+    name: 'Foo',
+    description: 'Bar',
+    price: 234,
+    currency: 'EUR',
+    image: '',
+} 
+
+const itemPreview: ItemPreview = {
+    name: 'Foo',
+    image: '',
+    description: 'Bar', // description is not assignable to type 'ItemPreview'.
 }
 ```
