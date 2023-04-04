@@ -15,6 +15,7 @@
 1. [Testing](./tips/testing.md)
 1. [CSS](./tips/css.md)
 1. [Other](./tips/other.md)
+1. [Security](./tips/security.md)
 
 ## Challenges
 
