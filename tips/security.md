@@ -9,3 +9,8 @@ document.querySelector(".status_timer").textContent = `{{ name }}: ${result}`;
 // user input
 `;js-code-goes-here;//
 ```
+
+## Scan network
+```sh
+nmap 10.219.13.0/24
+```
